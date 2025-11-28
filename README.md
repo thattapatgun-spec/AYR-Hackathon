@@ -1,4 +1,4 @@
-# AYR-Hackathon Competition Submission
+# AYRE-Hackathon Competition Submission
 
 ## Project Description
 
