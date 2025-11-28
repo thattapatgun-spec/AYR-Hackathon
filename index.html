@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Friend 💙</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💙 Your Friend</h1>
+            <p>I'm here for you, always</p>
+        </header>
+ 
+        <!-- Onboarding Screen -->
+        <div id="onboarding" class="screen active">
+            <div class="welcome-box">
+                <h2>Hey there! 👋</h2>
+                <p>I'm here to be a supportive friend whenever you need someone to talk to.</p>
+                <p>No judgment, just support.</p>
+               
+                <label for="userName">What should I call you?</label>
+                <input type="text" id="userName" placeholder="Your name...">
+               
+                <button id="startBtn">Let's Start 💙</button>
+            </div>
+        </div>
+ 
+        <!-- Chat Screen -->
+        <div id="chatScreen" class="screen">
+            <!-- Top bar with buttons -->
+            <div class="top-bar">
+                <button id="historyBtn" class="icon-btn" title="View conversation history">📋</button>
+                <button id="exportBtn" class="icon-btn" title="Export conversation">💾</button>
+                <button id="statsBtn" class="icon-btn" title="View stats">📊</button>
+            </div>
+           
+            <!-- Stress indicator -->
+            <div class="stress-indicator">
+                <span>Current vibe: </span>
+                <span id="stressDisplay">Calm 😌</span>
+            </div>
+ 
+            <!-- Chat messages -->
+            <div id="chatMessages"></div>
+ 
+            <!-- Input area -->
+            <div class="input-area">
+                <input type="text" id="messageInput" placeholder="Type anything...">
+                <button id="sendBtn">Send</button>
+                <button id="voiceBtn" title="Voice input">🎤</button>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Modal for stats/history -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Info</h2>
+                <button class="close-btn" id="closeModal">×</button>
+            </div>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+ 
+    <script src="voice.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+ 
